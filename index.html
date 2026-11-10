@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ecosun — сонячні електростанції під ключ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="order-toggle" class="modal-toggle" />
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#" class="logo"
+          ><img src="img/logo.png" alt="Ecosun" width="180" height="46"
+        /></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="burger" aria-label="Меню"
+          ><span></span
+        ></label>
+        <nav class="nav">
+          <a href="#solutions">Рішення</a>
+          <a href="#benefits">Переваги</a>
+          <a href="#works">Наші роботи</a>
+          <a href="#pricing">Вартість</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
+        <label for="order-toggle" class="btn btn--dark btn--sm"
+          >Зателефонувати</label
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="solutions">
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="./img/hero.png"
+        >
+          <source src="./video/video.mp4" type="video/mp4" />
+        </video>
+        <div class="container hero__inner">
+          <div class="hero__text">
+            <span class="badge"
+              ><i class="dot dot--green"></i>Енергія, що працює на вас</span
+            >
+            <h1>Сонце живить ваш дім. Ми робимо це можливим.</h1>
+            <p>
+              Проєктуємо та встановлюємо сонячні електростанції під ключ — від
+              першого розрахунку до чистої енергії у вашій розетці.
+            </p>
+            <div class="hero__actions">
+              <a href="#pricing" class="btn btn--dark">Розрахувати станцію →</a>
+              <span class="hero__note">Гарантія до 25 років</span>
+            </div>
+          </div>
+          <div class="hero__image">
+            <img src="./img/hero.png" alt="Будинок із сонячними панелями" />
+          </div>
+        </div>
+      </section>
+
+      <section class="why" id="benefits">
+        <div class="container">
+          <div class="why__head">
+            <span class="label">Чому Ecosun?</span>
+            <h2>Розумна інвестиція у незалежність</h2>
+          </div>
+          <div class="why__cards">
+            <article class="card">
+              <i class="dot dot--yellow"></i>
+              <strong class="card__num">−70%</strong>
+              <h3>менше витрат</h3>
+              <p>Власна енергія суттєво зменшує щомісячні рахунки.</p>
+            </article>
+            <article class="card">
+              <i class="dot dot--yellow"></i>
+              <strong class="card__num">7 днів</strong>
+              <h3>до запуску</h3>
+              <p>Монтаж, підключення та перевірка однією командою.</p>
+            </article>
+            <article class="card">
+              <i class="dot dot--yellow"></i>
+              <strong class="card__num">25 років</strong>
+              <h3>гарантії</h3>
+              <p>Надійні панелі й офіційна сервісна підтримка.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="container">
+          <span class="label label--lime">Наші роботи</span>
+          <h2>Енергія вже працює</h2>
+          <div class="works__slider">
+            <input
+              type="radio"
+              name="work"
+              id="work-r1"
+              class="works__radio"
+              checked
+            />
+            <input type="radio" name="work" id="work-r2" class="works__radio" />
+            <input type="radio" name="work" id="work-r3" class="works__radio" />
+            <input type="radio" name="work" id="work-r4" class="works__radio" />
+
+            <div class="works__grid">
+              <div class="works__slide">
+                <span class="works__count">01 / 04</span>
+                <img src="./img/work-1.png" alt="Проєкт 1" />
+                <label
+                  for="work-r4"
+                  class="works__arrow works__arrow--prev"
+                  aria-label="Попередня"
+                  >‹</label
+                >
+                <label
+                  for="work-r2"
+                  class="works__arrow works__arrow--next"
+                  aria-label="Наступна"
+                  >›</label
+                >
+              </div>
+              <div class="works__slide">
+                <span class="works__count">02 / 04</span>
+                <img src="./img/work-2.png" alt="Проєкт 2" />
+                <label
+                  for="work-r1"
+                  class="works__arrow works__arrow--prev"
+                  aria-label="Попередня"
+                  >‹</label
+                >
+                <label
+                  for="work-r3"
+                  class="works__arrow works__arrow--next"
+                  aria-label="Наступна"
+                  >›</label
+                >
+              </div>
+              <div class="works__slide">
+                <span class="works__count">03 / 04</span>
+                <img src="./img/work-3.png" alt="Проєкт 3" />
+                <label
+                  for="work-r2"
+                  class="works__arrow works__arrow--prev"
+                  aria-label="Попередня"
+                  >‹</label
+                >
+                <label
+                  for="work-r4"
+                  class="works__arrow works__arrow--next"
+                  aria-label="Наступна"
+                  >›</label
+                >
+              </div>
+              <div class="works__slide">
+                <span class="works__count">04 / 04</span>
+                <img src="./img/work-4.png" alt="Проєкт 4" />
+                <label
+                  for="work-r3"
+                  class="works__arrow works__arrow--prev"
+                  aria-label="Попередня"
+                  >‹</label
+                >
+                <label
+                  for="work-r1"
+                  class="works__arrow works__arrow--next"
+                  aria-label="Наступна"
+                  >›</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2>Вартість послуг</h2>
+          <div class="pricing__grid">
+            <article class="plan plan--lime">
+              <h3>Економ</h3>
+              <div class="plan__price">4600 - 6200 ₴<small>/ кВт</small></div>
+              <ul>
+                <li>Встановлення кріплень</li>
+                <li>Монтаж панелей</li>
+                <li>Прокладка кабелю та підключення</li>
+              </ul>
+              <label for="order-toggle" class="plan__btn">Оформити</label>
+            </article>
+
+            <article class="plan plan--dark">
+              <h3>Стандарт</h3>
+              <div class="plan__price">
+                25 000 – 32 000 ₴<small>/ кВт</small>
+              </div>
+              <ul>
+                <li>Панелі Tier-1 та мережевий інвертор</li>
+                <li>Алюмінієві кріплення на покрівлю</li>
+                <li>Пусконалагоджувальні роботи</li>
+                <li>Повний монтаж та прокладка кабелю</li>
+                <li>Доставка обладнання</li>
+              </ul>
+              <label for="order-toggle" class="plan__btn">Оформити</label>
+            </article>
+
+            <article class="plan plan--green">
+              <h3>Під ключ</h3>
+              <div class="plan__price">
+                38 000 – 52 000 ₴<small>/ кВт</small>
+              </div>
+              <ul>
+                <li>Сонячні панелі Tier-1 найвищої ефективності</li>
+                <li>Гібридний інвертор з функцією резервного живлення</li>
+                <li>Блок літієвих акумуляторів (LiFePO4)</li>
+                <li>Повний монтаж та налаштування щита автоматики</li>
+                <li>Налаштування мобільного додатку для моніторингу 24/7</li>
+                <li>Допомога з документами (Net Billing / дозвіл)</li>
+                <li>Розширена гарантія та сервісний супровід</li>
+              </ul>
+              <label for="order-toggle" class="plan__btn">Оформити</label>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <strong>Ecosun</strong>
+            <p>Чиста енергія для дому, бізнесу та майбутнього.</p>
+          </div>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"
+              ><img src="./img/facebook.png" alt="" />
+            </a>
+            <a href="#" aria-label="Instagram"
+              ><img src="./img/instagram.png" alt="" />
+            </a>
+            <a href="#" aria-label="TikTok"
+              ><img src="./img/tiktok.png" alt="" />
+            </a>
+          </div>
+          <div class="footer__phone">
+            <span>Гаряча лінія</span>
+            <a href="tel:0800332480">0 800 33 24 80</a>
+          </div>
+        </div>
+        <div class="footer__messengers">
+          <a href="#" class="pill"><i class="dot dot--lime"></i>Telegram</a>
+          <a href="#" class="pill"><i class="dot dot--lime"></i>WhatsApp</a>
+          <a href="#" class="pill"><i class="dot dot--lime"></i>Viber</a>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 Ecosun. Усі права захищено.</span>
+          <a href="#">Політика конфіденційності</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <label for="order-toggle" class="modal__overlay"></label>
+      <div
+        class="modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="order-title"
+      >
+        <label for="order-toggle" class="modal__close" aria-label="Закрити"
+          >×</label
+        >
+
+        <div class="modal__form">
+          <h2 id="order-title">Залишити заявку</h2>
+          <p class="modal__lead">
+            Передзвонимо та розрахуємо станцію під ваш дім.
+          </p>
+
+          <form class="form" action="#" method="post">
+            <div class="form__row">
+              <div class="field">
+                <label for="f-name">Ім’я</label>
+                <input
+                  type="text"
+                  id="f-name"
+                  name="name"
+                  placeholder="Вася"
+                  required
+                  minlength="2"
+                  maxlength="40"
+                  pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ’' \-]{2,40}"
+                  title="Лише літери, від 2 до 40 символів"
+                  autocomplete="given-name"
+                />
+              </div>
+              <div class="field">
+                <label for="f-phone">Телефон</label>
+                <input
+                  type="tel"
+                  id="f-phone"
+                  name="phone"
+                  placeholder="+380 50 123 45 67"
+                  required
+                  pattern="\+?[0-9 \(\)\-]{10,18}"
+                  title="Номер телефону, наприклад +380 50 123 45 67"
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input
+                type="email"
+                id="f-email"
+                name="email"
+                placeholder="name@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="f-plan">Тариф</label>
+                <select id="f-plan" name="plan" required>
+                  <option value="" disabled selected>Оберіть тариф</option>
+                  <option value="econom">Економ</option>
+                  <option value="standard">Стандарт</option>
+                  <option value="turnkey">Під ключ</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-power">Потужність, кВт</label>
+                <input
+                  type="number"
+                  id="f-power"
+                  name="power"
+                  min="1"
+                  max="500"
+                  step="1"
+                  placeholder="10"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-date">Зручна дата дзвінка</label>
+              <input type="date" id="f-date" name="date" />
+            </div>
+
+            <fieldset>
+              <legend>Як з вами зв’язатися?</legend>
+              <div class="form__options">
+                <label
+                  ><input
+                    type="radio"
+                    name="contact"
+                    value="phone"
+                    required
+                    checked
+                  />
+                  Телефон</label
+                >
+                <label
+                  ><input type="radio" name="contact" value="telegram" />
+                  Telegram</label
+                >
+                <label
+                  ><input type="radio" name="contact" value="viber" />
+                  Viber</label
+                >
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="f-message">Коментар</label>
+              <textarea
+                id="f-message"
+                name="message"
+                rows="3"
+                maxlength="300"
+                placeholder="Площа даху, тип покрівлі, побажання"
+              ></textarea>
+            </div>
+
+            <label class="form__check">
+              <input type="checkbox" name="agree" required />
+              Погоджуюсь з політикою конфіденційності
+            </label>
+
+            <button type="submit" class="btn btn--dark form__submit">
+              Надіслати заявку
+            </button>
+          </form>
+        </div>
+
+        <div class="modal__info">
+          <div class="table-wrap">
+            <table class="table">
+              <caption>
+                Що входить у тариф
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Послуга</th>
+                  <th scope="col">Економ</th>
+                  <th scope="col">Стандарт</th>
+                  <th scope="col">Під ключ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Ціна, ₴ / кВт</th>
+                  <td>4600–6200</td>
+                  <td>25 000–32 000</td>
+                  <td>38 000–52 000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Монтаж і підключення</th>
+                  <td class="yes">✓</td>
+                  <td class="yes">✓</td>
+                  <td class="yes">✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Панелі Tier-1 та інвертор</th>
+                  <td class="no">—</td>
+                  <td class="yes">✓</td>
+                  <td class="yes">✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Пусконалагодження</th>
+                  <td class="no">—</td>
+                  <td class="yes">✓</td>
+                  <td class="yes">✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Доставка обладнання</th>
+                  <td class="no">—</td>
+                  <td class="yes">✓</td>
+                  <td class="yes">✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Акумулятори LiFePO4</th>
+                  <td class="no">—</td>
+                  <td class="no">—</td>
+                  <td class="yes">✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Документи (Net Billing)</th>
+                  <td class="no">—</td>
+                  <td class="no">—</td>
+                  <td class="yes">✓</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
